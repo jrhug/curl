@@ -30,6 +30,16 @@ forward and as such cannot be accepted, inform the author about this sooner
 rather than later. Do it gently and explain why and possibly what could be
 done to make it more acceptable.
 
+## API/ABI stability or changed behavior
+
+Changing the API and the ABI may be fine in a change but it needs to be done
+deliberately and carefully. If not, a reviewer must help the author to realize
+the mistake.
+
+curl and libcurl are similarly very strict on not modifying existing
+behavior. API and ABI stability is not enough, the behavior should also remain
+intact as far as possible.
+
 ## Code style
 
 Most code style nits are detected by checksrc but not all. Only leave remarks
