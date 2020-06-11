@@ -43,7 +43,7 @@ intact as far as possible.
 ## Code style
 
 Most code style nits are detected by checksrc but not all. Only leave remarks
-on style deviation once checksrc doesn't find anymore.
+on style deviation once checksrc doesn't find any more.
 
 Minor nits from fresh submitters can also be handled by the maintainer when
 merging, in case it seems like the submitter isn't clear on what to do. We
