@@ -39,15 +39,15 @@ Minor nits from fresh submitters can also be handled by the maintainer when
 merging, in case it seems like the submitter isn't clear on what to do. We
 want to make the process fun and exciting for new contributors.
 
-## Encourage conformity
+## Encourage consistency
 
 Make sure new code is written in a similar style as existing code. Naming,
 logic, conditions, etc.
 
-## Are pointers always non-NULL
+## Are pointers always non-NULL?
 
 If a function or code rely on pointers being non-NULL, take an extra look if
-that's seems to be a fair assessment.
+that seems to be a fair assessment.
 
 ## Asserts
 
@@ -62,15 +62,15 @@ there are (new) mallocs, can they be combined into fewer calls?
 
 Are all allocations handled in errorpaths to avoid leaks and crashes?
 
-## Should features be #ifdef'ed
+## Should features be `#ifdef`ed?
 
 Features and functionality may not be present everywhere and should therefore
-be #ifdef'ed. Additionally, some features should be possible to switch on/off
+be `#ifdef`ed. Additionally, some features should be possible to switch on/off
 in the build.
 
-Write #ifdefs to be as little of a "maze" as possible.
+Write `#ifdef`s to be as little of a "maze" as possible.
 
-## Does it look portable enough
+## Does it look portable enough?
 
 curl runs "everywhere". Does the code take a reasonable stance and enough
 precautions to be possible to build and run on most platforms?
@@ -90,7 +90,7 @@ updated documentation. Submitting that in a separate follow-up pull request is
 not OK. A code review must also verify that the submitted documentation update
 matches the code submission.
 
-English isn't everyone first language, be mindful of this and help the
+English isn't everyone's first language, be mindful of this and help the
 submitter improve the text if it needs a rewrite to read better.
 
 ## Code shouldn't be hard to understand
@@ -131,7 +131,7 @@ happen.
 
 ## Dangerous use of functions
 
-Maybe use of realloc() should rather use the dynbuf functions?
+Maybe use of `realloc()` should rather use the dynbuf functions?
 
 Do not allow new code that grows buffers without using dynbuf.
 
